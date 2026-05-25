@@ -1,19 +1,3 @@
-"""
-GitHub DevOps MCP Server
-========================
-A Model Context Protocol server that exposes GitHub DevOps tools
-to any MCP-compatible AI host (OpenWebUI, Claude Desktop, Cursor).
-
-Tools exposed:
-  - list_repos: List your GitHub repositories
-  - get_pull_requests: Get PRs for a repo (open/closed/all)
-  - get_workflow_runs: Get GitHub Actions CI/CD runs
-  - get_repo_security: Get Dependabot vulnerability alerts
-  - get_repo_stats: Get contributor and commit activity
-
-Built for: DevOps/SRE Lead Interview Demo
-"""
-
 import os
 import httpx
 from mcp.server.fastmcp import FastMCP
